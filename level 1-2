@@ -1,1 +1,7 @@
+Kode tersimpan dalam folder yang berawalan (-). file yang berawalan dash (-) akan dianggap oleh commend-line sebagai option atau flag.
+Penyelsainnya gunakan (./) atau double dash (--).
 
+Commend dipelajari
+ls, cd, cat, file, du, find
+
+Password : 
