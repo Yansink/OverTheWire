@@ -1,0 +1,12 @@
+Password tersimpan didalan directory dengan memiliki ciri ciri :
+Human-readable
+1033 byte in size
+not executable
+
+Problem : file didalam salah satu directory bernama maybehere00 - maybehere19.
+
+Penyelsaian menggunakan commend find dengan option atau flag -size c.
+C berarti file berukuran byte.
+
+Password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
