@@ -1,0 +1,11 @@
+Password tersembunyi di directory inhere.
+
+Problem : nama yang tertera pada file berawalan (-), dan tidak mendiskripsikan isinya,
+          file terlalu banyak untuk di cek satu persatu.
+
+Penyelsaian : Masuk ke directory inhere, cek semua tipe data dengan commend (file) dan beri option atau flag (./*)
+              yang akan mengecek semua tipe data didalam directory tersebut.
+
+file dengan tipe data ASCII (American Standard Code Interchange of Information) adalah tipe yang Human-Readable.
+
+Passowrd  : 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
