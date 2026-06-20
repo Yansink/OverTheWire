@@ -1,8 +1,14 @@
-Password berada di file yang tersembunyi didalam directory yang dinamakan Inhere.
+The password for the next level is stored in a hidden file in the inhere directory.
 
-Masuk ke directory dengan commend (cd)
-commend ls dengan option atau flag -al
--a berarti jangan abaikan semua file yang berawalan (.)
--l tampilkan file yang di list dengan semua perincian
-
-Passoword : 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+Use Flag or Option from ls command.
+1. Log in to the level
+2. You will see directorie with name "inhere"
+3. When directorie is opened, nothing.
+4. To solve this use option al
+                          -a : all ( do not ignore entries starting with .
+                          -l : use long listing format 
+5. because dot causes the file to be hidden
+6. use -al to long list to more readable.
+7. The file name ...Hiding-From-You
+8. You can direct command cat ...Hiding-From-you
+9. Passowrd solved 🔑 [ 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ ]
