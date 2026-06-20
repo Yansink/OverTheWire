@@ -1,11 +1,17 @@
-Password tersembunyi di directory inhere.
+The password for the next level is stored in the only human-readable file in the inhere directory. 
 
-Problem : nama yang tertera pada file berawalan (-), dan tidak mendiskripsikan isinya,
-          file terlalu banyak untuk di cek satu persatu.
+Note : (*) mean,  we search the all the file based on argument/commend that followed
+          - In this case mean, we check what type of each file in one commend, without check each file mannualy.
 
-Penyelsaian : Masuk ke directory inhere, cek semua tipe data dengan commend (file) dan beri option atau flag (./*)
-              yang akan mengecek semua tipe data didalam directory tersebut.
 
-file dengan tipe data ASCII (American Standard Code Interchange of Information) adalah tipe yang Human-Readable.
+🚩 The fiels are not human-readable, just one file human-readable
 
-Passowrd  : 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+1. Log in to level
+2. cd to inhere directorie
+3. you mybe see many file. Just find out, wich file content type file ASCII (American Standart Code for Information Interchange) text.
+4. Use file commend to figure it out.
+5. but stay remamber, that the file use dash name, you shold use path command (./)
+6. $ file ./ *
+7. file -file07 has ASCII type.
+
+
