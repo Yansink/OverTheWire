@@ -4,7 +4,7 @@ Note : (*) mean,  we search all the file based on argument/commend that followed
           - In this case mean, we check what type of each file in one commend, without check each file mannualy.
 
 
-🚩 The fiels are not human-readable, just one file human-readable
+🚩 Fiels are not human-readable, just one file human-readable
 
 1. Log in to level
 2. cd to inhere directorie
