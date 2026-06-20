@@ -1,7 +1,18 @@
-The password for the next level is stored in the file data.txt and is the only line of text that occurs only once.
+🚩The password for the next level is stored in the file data.txt and is the only line of text that occurs only once.
 
 In this case we can use piping or redirection
 1. Log in to level
-2. Use command sort and uniq with flag -u
-3. looked like sort data.txt | uniq -u
-4. Passowrd solved [ 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM ]
+2.The file name data.txt
+3. Use command sort and uniq with flag -u
+4. looked like sort data.txt | uniq -u
+5. Passowrd solved 🔑 [ 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM ]
+
+-------------------------------
+I realized the way the command works is very different.
+If i use direct uniq -u, it doesn't work  
+              \\looked like : $ uniq -u data.txt
+
+🗒️
+The uniqlo -u command works by comparing the current line with the previous line. When the data is still random, it will simply reprint.
+Therefore, the sort command is needed to sort duplicate data. When piping and receiving data,
+the uniq command can compare which data appears only once based on the previous line.
