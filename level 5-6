@@ -1,12 +1,18 @@
-Password tersimpan didalan directory dengan memiliki ciri ciri :
-Human-readable
-1033 byte in size
-not executable
+🚩 The password for the next level is stored in a file somewhere under the inhere directory 
+and has all of the following properties 🗒️:
 
-Problem : file didalam salah satu directory bernama maybehere00 - maybehere19.
+    - human-readable
+    - 1033 bytes in size
+    - not executable
 
-Penyelsaian menggunakan commend find dengan option atau flag -size c.
-C berarti file berukuran byte.
+The only helpful clue here is the file size. Use this clue to find the file. In this case, there's only one file with a size of 1033 bytes.
+If you find a file with a similar size, another clue will be needed.
 
-Password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+1. Log in to level.
+2. There is directorie with name inhere.
+3. Find the file with find command but use -size n[cwbkMG] option with value 1033.
+4. In this case use byte, whicis use -size 1033c (c represent byte)
+5. The path showed with file name .file2
+5. use cat command to open it.
+6. Password solved 🔑 [ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG ]
 
