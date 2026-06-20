@@ -1,0 +1,34 @@
+The password for the next level is stored somewhere on the server and has all of the following 
+properties 🧩:
+- owned by user bandit7
+- owned by group bandit6
+- 33 bytes in size
+
+Note 🗒️:
+what is "Black Hole":
+Anything you send or dump into /dev/null will be lost instantly, and the system won't store or process it at all. 
+Furthermore, if a program tries to read the contents of /dev/null, it will get nothing (a blank/empty file).
+
+
+-----Commend Learned: 
+          ls , cd , cat , file , du , find , grep
+
+- grep = print lines that math pattern
+
+
+
+
+
+
+------------------------------------------------------------------------ 
+1. We use find command with option -user and -group
+2. to find out, where the file,  just us root (/) to search each directories.
+3. we will use "black hole" to remove error file or file that denied
+4. Concept STDIN(0), STDIN(1), STDERR(2) required to make a logic. But in this case, we use STDERR(2) to remove denied.
+5. look like ( $ find / -user bandit7 -group bandit6 -size 33c 2> /dev//null
+6. The path will be displayed.
+7. Open it with cat
+8. Passoword solved 🔑 [ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj ]
+
+
+
