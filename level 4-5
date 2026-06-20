@@ -1,6 +1,6 @@
 The password for the next level is stored in the only human-readable file in the inhere directory. 
 
-Note : (*) mean,  we search the all the file based on argument/commend that followed
+Note : (*) mean,  we search all the file based on argument/commend that followed
           - In this case mean, we check what type of each file in one commend, without check each file mannualy.
 
 
