@@ -1,9 +1,9 @@
-The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+🚩 The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
 
 COMMAND LEARNED
 -ls, cd,cat, file, du, find
 
-Note: 
+Note 🎯: 
 command cannot execute file name with space, to solve this we cann use
 - Quotation Marks: Wrap the entire filename in double quotes (e.g., cat "my file.txt").
 -Quotation Marks: Wrap the entire filename in double quotes (e.g., cat "my file.txt").
@@ -11,5 +11,11 @@ command cannot execute file name with space, to solve this we cann use
 -Hyphens/Kebab-case: my-file-name.txt
 -CamelCase: MyFileName.txt
 
-JUSE USE ONE
+JUSE USE ONE, in this case, i prefere use double quote
+1. Log in with password 🔑 [ 263JGJPfgU6LtdEvgfWU1XP5yac29mFx ]
+2. ls to see all directories
+3. Just one directories, and the name has --, which is the command can't execute.
+4. Use path (./) to execute and don't forget double qutoes.
+5. Looked like  $ cat ./"--spaces in this filename--"
+6. The password 🔑 [ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx ]
 
