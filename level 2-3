@@ -1,7 +1,15 @@
-Password tersimpan dalam file yang diberi nama ("--spaces in this filename--).Commend line tidak bisa membacar tanda sepasi.
-untuk menyelsaikan ini gunakan double quotes (" ") atau single quotes(' ')
+The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
 
-commend yang dipelajari:
-ls, cd, cat, du, find.
+COMMAND LEARNED
+-ls, cd,cat, file, du, find
 
-password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+Note: 
+command cannot execute file name with space, to solve this we cann use
+- Quotation Marks: Wrap the entire filename in double quotes (e.g., cat "my file.txt").
+-Quotation Marks: Wrap the entire filename in double quotes (e.g., cat "my file.txt").
+-Underscores: my_file_name.txt
+-Hyphens/Kebab-case: my-file-name.txt
+-CamelCase: MyFileName.txt
+
+JUSE USE ONE
+
