@@ -1,0 +1,10 @@
+🚩 The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+
+base64 used to decode/encode data. Because this file use alghorithm base64 to encode. 
+
+
+1. Log in to level.
+2. The file name data.txt
+3. Use base64 with option -d to decode it.
+4. Password solved 🔑 [ dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr ]
