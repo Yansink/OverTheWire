@@ -1,0 +1,36 @@
+🚩 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+
+///   In a hex dump, each byte (8 bits) is represented as a two-digit hexadecimal number. Hex dumps are commonly organized into rows of 8 or 16 bytes,
+
+✏️ Command Learned :
+     mkdir, cp, mv, bzip2, gzip, tar
+
+It is little bit complex
+
+1. Log in to level.
+2.  There is file with name data.txt, but this file is hexdump file.
+3. First make it non hexa format, change to  binary format.
+4. There is, the file is not human-readable.
+5. This file is not human readable due to compression. To  make it readable, just decommrepss it.
+6. First look at the file type.
+7. $ file data.txt, the data type is gzip.
+    // We must change the name by adding an extension according to the file type to tell the shell that the file is in a format (gz, bz2, or tar), so that commands like gzip, bzip2, or tar can be used.
+Because the shell must be told the format of a file, even if the file is already in type (gz, bz2, or tar), the shell cannot understand it.
+
+8. Type data now is gzip, rename with mv command to data.gz
+9. Use gzip command with flag -d  to decommpress data.gz.
+10. Look again to the type file. The type is already changed again to bzip2
+11. rename it again with extention data.bz2. And use bzip2 with option -d to decompress it.
+                // repeat this until it is formatted (tar)
+12. Change the name file with tar extention.
+13. Use tar command with -x flag to extrack that file. $ tar -f data.tar -x
+14. a file named data5.bin will appear
+15. Check type file of data5.bin, the type is stil tar.
+16. Change name, and extrack it with the same way stap 12. File with data6 appear.
+17. checked, and the type still tar. Extraction is requireid. Extrack it with the same previous way, and file data8.bin appear.
+18. The type data8.bin is gzip, rename with gz and decompress it.
+19. Password solved 🔑 [ FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn ]
+
+
+
