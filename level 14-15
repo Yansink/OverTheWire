@@ -1,0 +1,8 @@
+🚩 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+
+1. Look at first the password at /etc/bandit_pass/bandit14
+2. Just got the password to enter the local host 🔑 [ MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS ]
+3. Use command telnet to login localy.
+            looked like [ $ telnet localhost 30000 ]
+4. Enter the previous password.
+5. Than boom 💥, just solved it 🔑 [  8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo ]
