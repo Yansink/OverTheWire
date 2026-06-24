@@ -12,10 +12,10 @@ command cannot execute file name with space, to solve this we cann use
 -CamelCase: MyFileName.txt
 
 JUSE USE ONE, in this case, i prefere use double quote
-1. Log in with password 🔑 [ 263JGJPfgU6LtdEvgfWU1XP5yac29mFx ]
+1. Log in with password 🔑 [  ]
 2. ls to see all directories
 3. Just one directories, and the name has --, which is the command can't execute.
 4. Use path (./) to execute and don't forget double qutoes.
 5. Looked like  $ cat ./"--spaces in this filename--"
-6. The password 🔑 [ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx ]
+6. The password 🔑 [ 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME ]
 
