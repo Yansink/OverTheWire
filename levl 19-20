@@ -1,0 +1,10 @@
+🚩 To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. 
+The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.'
+
+🗒️Learned
+SETUID (Set user id) and SETGID (set group id)  
+
+1. Log in into level.
+2. There is a executeable file, this fill can used to execute argument, that need root access.
+3. Use this file ./bandit20-op to have an access owner to bandit20 file.
+4. passoword solved 🔑 [ 4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA ]
