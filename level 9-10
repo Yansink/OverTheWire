@@ -4,6 +4,6 @@ Problem: - The data.txt is not human-readable, just few line human-readable.
           - The passport is located in this unreadable file.
 
 1. Use string command to extract human-readable charakter from file.
-2. And use grep with option -e or -i to found sign "="
-3. Looked like strings data.txt | grep -e "="
-4. Password solved 🔑 [ FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey ]
+2. And use grep "="
+3. Looked like strings data.txt | grep "="
+4. Password solved 🔑 [ B0s2khmbT9u0geKuOoVGW3JZKhndE3BG ]
