@@ -1,0 +1,24 @@
+ 🚩 There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+
+NOTE: if you have solved this level and see ‘Byebye!’ when trying to log into bandit18, this is related to the next level, bandit19
+
+commnad learned
+diff
+
+1. Use key credential, that i have copied. But take note, we must change the permission with chmod command and value 700, that mean just the owner can write, read, and execute.
+2. use diff commmand to show the diffent between two file.
+-------------------------------------------------------------
+bandit17@bandit:~$ diff passwords.new passwords.old
+42c42
+< OQxXZjELndr90zuhOTDYBEomI0SZITXI
+---
+> qOg5pVOjPx9x9VccyYBADiT4xxyoUB8D
+--------------------------------------------------------------
+meaning of the sign :
+----  (<) less then is this line is present in the first file but missing or modified in the second file.
+----  (>) greather then is this line is present in the second file but missing or modified in the first file.
+
+all of this mean, that pass in the second file has modified and changed looked like in the less then (<) sign 
+
+
+The password solved 🔑 [ OQxXZjELndr90zuhOTDYBEomI0SZITXI ]
