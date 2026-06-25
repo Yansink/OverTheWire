@@ -8,4 +8,4 @@ ssh, telnet, nc, ncat, socat, openssl, s_client, nmap, netstat, ss
 1. Log in to the level.
 2. openssl s_client command used to make a scure connection
 3. use -connect option or -host, but in this case i prevere use -connect.
-4. Input the current password, enter. Password solved 🔑 [ kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx ] 
+4. Input the current password, enter. Password solved 🔑 [ kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V ] 
