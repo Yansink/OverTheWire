@@ -1,0 +1,5 @@
+This level is same.
+But this time i try to execute the file and what will happen, the cron try to coppy password file from /etc/bandit_pass/bandit22 to /tmp/8169b67bd894ddbb4412f91573b38db3.
+To find the password open the file /tmp/8169b67bd894ddbb4412f91573b38db3.
+
+Password solved [ 
