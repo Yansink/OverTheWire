@@ -2,4 +2,26 @@ A program is running automatically at regular intervals from cron, the time-base
 
 This level covers the structure of cron, the tool for automating script execution.
 
-To see the configuration of corn go to /etc/cron.d.
+The configuration is located in /etc/cron.d
+To view the contents try to ls, there is so many file. But keep focus on the next level, which bandit22.
+let's try to break down the file cronjob_bandit22, and see what's going on.
+
+            * * * * * bandit22  &> /dev/null
+what this all mean?
+see the 5 asterisks, starting from the left, they are the minute, hour, date, month, and day. The user is bandit22,
+and this file is, what shoud cron execute letter /usr/bin/cronjob_bandit22.sh.
+
+let's break down the file crobjob_bandit22.sh
+open the file, use cat or nano. 
+        
+          #!/bin/bash
+          chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+          cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+When the time comes, cron will update the permissions and overwrite the file `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv` with the contents of the file `/etc/bandit_pass/bandit22`.
+
+Okey, now find the password to the next level, just open the file bandit22 or /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+      PASSWORD SOLVED [ RYVux2rHEm9tiXHmLFzuR7Vhx6AZQMEz ]
+          
+            
