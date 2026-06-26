@@ -11,6 +11,18 @@ what this all mean?
 see the 5 asterisks, starting from the left, they are the minute, hour, date, month, and day. The user is bandit22,
 and this file is, what shoud cron execute letter /usr/bin/cronjob_bandit22.sh.
 
+
+| Cron Expression | Meaning                                  | //  ***** mean every possible value. Every minute, hour, day of the mounth, every mounth
+| --------------- | ---------------------------------------- |           and every day of the week
+| `* * * * *`     | Every minute                             |  
+| `*/5 * * * *`   | Every 5 minutes (0, 5, 10, ..., 55)      |
+| `0 * * * *`     | At minute 0 of every hour                |
+| `0 2 * * *`     | Every day at 2:00 AM                     |
+| `30 8 * * 1`    | Every Monday at 8:30 AM                  |
+| `0 0 1 * *`     | Midnight on the first day of every month |
+
+
+
 let's break down the file crobjob_bandit22.sh
 open the file, use cat or nano. 
         
