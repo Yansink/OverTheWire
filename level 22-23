@@ -1,5 +1,25 @@
-This level is same.
-But this time i try to execute the file and what will happen, the cron try to coppy password file from /etc/bandit_pass/bandit22 to /tmp/8169b67bd894ddbb4412f91573b38db3.
-To find the password open the file /tmp/8169b67bd894ddbb4412f91573b38db3.
+# Bandit Level 23
 
-Password solved [ 
+The script contains a variable named `myname` with the value `whoami`. However, the `mytarget` part is more important for this simulation.
+
+```bash
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+```
+
+Ignore the variable holding the `whoami` value—it can be confusing for beginners, as we wouldn't necessarily know that the `bandit` user had already prepared that specific file.
+
+Focus on the code above; it generates a filename based on the hash of the string `"I am user $myname"`. This resulting filename is where the password is stored.
+
+Replace `myname` with `bandit23` and open the corresponding file in `/tmp`.
+
+**Password solution:**
+
+```text
+gKXDTAXnIz3OBxiPjRZ2uqutUlPZrBsw
+```
+
+---
+
+## What I Learned
+
+> If you know the hashing algorithm being used, applying it to the same input string will always yield the same hash result.
