@@ -1,0 +1,38 @@
+## 🚩 Bandit Level 23
+
+In this level, I started by analyzing the `cronjob_bandit24` script.
+
+The script scans every file inside `/var/spool/bandit24/foo`. Its logic is fairly straightforward:
+
+* It loops through every file in the directory.
+* It ignores the special entries `.` and `..`.
+* It checks who owns each file.
+* It verifies that the item is a regular file.
+* If the file is owned by `bandit23`, it executes the script.
+* Once the execution finishes (or times out), the file is deleted.
+
+Since I couldn't read `/etc/bandit_pass/bandit24` directly, I needed another approach.
+Instead of trying to access the password myself, I wrote a small shell script that copies the password to a location I could read later.
+
+### Steps
+
+First, I created a directory inside `/tmp` (for example, `banditpass`).
+
+Inside that directory, I created a shell script containing:
+
+```bash--------------------------------------------------------
+cat /etc/bandit_pass/bandit24 > /tmp/banditpass/password.txt
+```------------------------------------------------------------
+
+I didn't place `password.txt` directly under `/tmp` because that isn't allowed. Creating my own directory gave me a writable location that I controlled.
+
+Next, I changed the permissions on the directory so that another user—in this case, `bandit24`, which executes the cron job—could access it.
+
+I also made the shell script executable for everyone. This is important because the script would eventually be executed by `bandit24` after I placed it in `/var/spool/bandit24/foo`.
+
+Once the cron job ran, it executed my script with `bandit24`'s permissions, copied the password into my directory, and I was then able to read `password.txt` as `bandit23`.
+
+
+
+PASSWORD SOLVED 🔑 [ hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv ]
+
