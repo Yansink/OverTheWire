@@ -1,0 +1,42 @@
+🚩 Bandit Level 24
+
+In this level, the goal was to perform a simple brute-force attack.
+
+The service expects two values on each line:
+
+* the password from the previous level
+* a 4-digit PIN
+
+Both values must be separated by a space.
+
+I used a small Bash script to generate every possible PIN, from `0000` to `9999`.
+
+```bash---------------------------------------------------------------------------
+for i in {0000..9999}; do
+    echo "previous_password $i"
+done
+```-------------------------------------------------------------------------------
+
+I saved the script as `bruteforce.sh`.
+
+Instead of typing every combination manually, I piped the output of the script directly into `nc`:
+
+```bash----------------------------------------------------------------------------
+./bruteforce.sh | nc localhost 30002
+```---------------------------------------------------------------------------------
+
+When the connection is made, the script starts generating every password and PIN combination. Each line is sent to the service until the correct PIN is found.
+
+Once the correct combination is received, the service returns the password for the next level.
+
+✅ Password Solved
+-----------------------------------
+SoHfqMOEqIX2IYKVciZxvgpR9a2Djx4P
+-----------------------------------
+
+💡 What I Learned
+
+* A Bash script can be used to automate repetitive tasks.
+* The output of one command can be sent directly to another command using a pipe (`|`).
+* `nc` reads input from standard input, which makes it easy to test many inputs without typing them one by one.
+* Even a simple brute-force attack can be automated with just a few lines of Bash.
