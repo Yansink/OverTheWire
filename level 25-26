@@ -1,0 +1,1 @@
+Logging in to Bandit 25 is straightforward. Simply use scp to copy bandit26.sshkey to the local machine, then use the key to log in to the next level.
