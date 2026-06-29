@@ -1,0 +1,24 @@
+Bandit Level 26 → 27
+
+This level was surprisingly tricky. As a beginner, I would never have thought of the solution on my own, so I had to look up a few references to understand what was going on.
+
+One important lesson I took away from this challenge is that even if a system administrator tries to restrict a user's access, there may still be legitimate features or overlooked behaviors that can be used to work around those restrictions. 
+Understanding how Linux works under the hood often reveals possibilities that aren't obvious at first.
+
+One of the concepts I learned is the purpose of the /etc/passwd file.
+
+Every user account on a Linux system has an entry in this file, which stores basic information about the account.
+
+bandit25:x:11025:11025:bandit level 25:/home/bandit25:/bin/bash
+---------------------------------------------------------------
+1        2  3      4         5              6            7
+
+Each field is separated by a colon (:).
+
+Username – The login name of the user.
+Password placeholder – The x indicates that the account has a password, but the actual password hash is stored separately in /etc/shadow for security reasons.
+UID (User ID) – A unique numerical identifier assigned to the user.
+GID (Group ID) – The numerical identifier of the user's primary group.
+GECOS field – An optional field that stores additional information about the account, such as a description or the user's full name. In this case, it simply says "bandit level 25."
+Home directory – The user's default working directory after logging in. This is where personal files are typically stored.
+Login shell – The program that is launched automatically after the user logs in. In most cases this is /bin/bash, but it can be changed to another shell or even to a custom program, depending on how the account is configured.
