@@ -22,3 +22,12 @@ GID (Group ID) – The numerical identifier of the user's primary group.
 GECOS field – An optional field that stores additional information about the account, such as a description or the user's full name. In this case, it simply says "bandit level 25."
 Home directory – The user's default working directory after logging in. This is where personal files are typically stored.
 Login shell – The program that is launched automatically after the user logs in. In most cases this is /bin/bash, but it can be changed to another shell or even to a custom program, depending on how the account is configured.
+-------------------------------------------------------------------
+
+
+To clear this level, you need to log in using an SSH private key.
+There is a flaw in the login logic, but we can exploit a specific vulnerability by shrinking the terminal window. Making the screen smaller interrupts the login sequence, causing it to load incompletely.
+Once the loading freezes, you can trick the system into launching 'vi' editor mode. From there, manually force the shell path to change, and then spawn a normal terminal command prompt.
+After successfully breaking through, you will gain full access to the machine and secure the password.
+
+PASSWORD SOLVED [ STJLJBRRphMxKB392CT4iOr5CbzPU9ER ]
