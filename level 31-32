@@ -1,0 +1,16 @@
+As usual, I started by creating a directory on my local machine and cloning the Bandit repository into it.
+
+The README.md file explained that I needed to create a file named key.txt containing the text May I come in? and commit it to the master branch.
+
+At first, I couldn't add the file because the repository included a hidden .gitignore file that ignored all .txt files. To get around this, I used the -f option with git add to force Git to stage the file despite the ignore rule.
+
+Once the file was committed, I pushed the changes to the remote master branch using:
+
+---------------------------------------
+git push -u origin master
+---------------------------------------
+
+The -u option sets the upstream relationship between the local and remote branches, so future git push and git pull commands can be used without specifying the remote or branch each time. 
+origin is simply the default name of the remote repository—it isn't a reserved keyword and can be renamed if needed. master refers to the local branch being pushed.
+
+PASSWORD SOLVED : pWuj5jBQ6IgV0NXwiH6g1pXRF8S1YvbT
