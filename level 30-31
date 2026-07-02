@@ -1,0 +1,4 @@
+I cloned the repository for Bandit Level 30 and opened the README.md file, but it turned out to be empty.
+
+Since there was nothing useful there, I started looking through the Git metadata. While inspecting the packed-refs file, I found a reference to a tag named secret. I then used git show to inspect it, which revealed the password.
+PASSWORD : 82NkymblpGBYmIXG6ZQ8YldBYstHpfUf
